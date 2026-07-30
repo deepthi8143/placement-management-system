@@ -1,39 +1,44 @@
-# Record-Triggered Flow
+# Record-Triggered Flows
 
-## Definition
-A Record-Triggered Flow is a Salesforce automation tool that runs automatically when a record is created, updated, or deleted. It allows you to automate business processes without writing Apex code.
+A Record-Triggered Flow is an automation tool in Salesforce that runs automatically when a record is created, updated, or deleted.
 
-## Objective
-Automate the application process in the Placement Management System.
+---
 
-## Flow Type
-Record-Triggered Flow
+## Flow 1: Auto Populate Application Date
 
-## Object
-Application__c
+**Flow Type:** Before Save Record-Triggered Flow
 
-## Trigger
-- Runs when an Application record is created.
+**Object:** Application__c
 
-## Business Requirements
-- Automatically populate the **Application Date**.
-- Send a confirmation email to the Placement Officer.
+**Trigger:** Record Created
 
-## Implementation
+**Purpose:**
+Automatically sets the Application Date when a new application is created.
 
-### Before Save Flow
-- Sets the **Application Date** to the current date before the record is saved.
-- Uses an **Assignment** element.
+---
 
-### After Save Flow
-- Sends a confirmation email to the Placement Officer after the record is successfully created.
-- Uses the **Send Email** action.
+## Flow 2: Send Confirmation Email
 
-## Why Record-Triggered Flow?
-- No Apex code required.
-- Faster and easier to maintain.
-- Follows Salesforce's **Clicks Before Code** best practice.
+**Flow Type:** After Save Record-Triggered Flow
 
-## Learning Outcome
-- Understood how to build Record-Triggered Flows.
-- Automated business processes using declarative tools.
+**Object:** Application__c
+
+**Trigger:** Record Created
+
+**Purpose:**
+Sends a confirmation email to the Placement Officer.
+
+---
+
+## Flow 3: Create Offer Letter
+
+**Flow Type:** After Save Record-Triggered Flow
+
+**Object:** Application__c
+
+**Trigger:** Record Updated
+
+**Condition:** Status = Selected
+
+**Purpose:**
+Automatically creates an Offer Letter record when a student's application status becomes **Selected**.
