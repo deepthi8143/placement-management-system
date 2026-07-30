@@ -1,6 +1,6 @@
-# Placement Management System using Apex Trigger
+# Placement Management System - Day1
 
-## Project Overview
+## 📌 Project Overview
 
 This project automates the student job application process using Apex Triggers in Salesforce. The trigger validates each application before it is saved and ensures that all business rules are followed.
 
