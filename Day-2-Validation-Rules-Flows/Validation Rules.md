@@ -1,48 +1,48 @@
 # Validation Rules
 
-A Validation Rule is a Salesforce feature that checks whether the data entered by a user follows business rules. If the data is invalid, Salesforce prevents the record from being saved and displays an error message.
+## Definition
 
-## Purpose
-Validation Rules help maintain data accuracy and consistency by preventing invalid data from being stored.
-
-## Example Business Requirements
-
-### 1. Prevent Duplicate Applications
-**Requirement**
-- A student should not apply for the same job more than once.
-
-**Solution**
-- Validation Rule
-
-**Reason**
-- Prevents duplicate records from being saved.
+A Validation Rule checks whether the entered data follows business rules. If the data is invalid, Salesforce prevents the record from being saved and displays an error message.
 
 ---
 
-### 2. Reject Low CGPA
-**Requirement**
-- Students with a CGPA below the minimum required CGPA should not be allowed to apply.
+## Validation Rule 1
 
-**Solution**
-- Validation Rule (if the comparison can be done directly) or Flow (if complex cross-object logic is required).
+**Requirement:**
+Student CGPA must be greater than or equal to the Job's minimum CGPA.
 
-**Reason**
-- Ensures only eligible students can apply.
+**Formula:**
+
+```text
+Student__r.CGPA__c < Job__r.Minimum_CGPA__c
+```
 
 ---
 
-## Benefits
-- Improves data quality.
-- Prevents invalid records.
-- Easy to maintain.
-- No coding required.
+## Validation Rule 2
 
-## Interview Points
-- Validation Rules only validate data.
-- They cannot create, update, or delete records.
-- They cannot send emails.
-- They cannot perform automation tasks.
+**Requirement:**
+Application Date cannot be after the Job Closing Date.
 
-## Learning Outcome
-- Learned how Validation Rules enforce business rules.
-- Understood when to use Validation Rules instead of Flows or Apex Triggers.
+**Formula:**
+
+```text
+Application_Date__c > Job__r.Closing_Date__c
+```
+
+---
+
+## Validation Rule 3
+
+**Requirement:**
+Mandatory fields cannot be left blank.
+
+**Formula:**
+
+```text
+OR(
+ISBLANK(Student__c),
+ISBLANK(Job__c),
+ISBLANK(Application_Date__c)
+)
+```
