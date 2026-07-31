@@ -1,4 +1,4 @@
-# Lightning Web Components (LWC) - Placement Management System
+# 🚀 Lightning Web Components (LWC) - Placement Management System
 
 ## Project Overview
 
