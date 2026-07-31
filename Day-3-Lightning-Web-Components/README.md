@@ -1,4 +1,4 @@
-# 🚀 Lightning Web Components (LWC) - Placement Management System
+# 🚀 Day3 - Lightning Web Components (LWC)
 
 ## Project Overview
 
