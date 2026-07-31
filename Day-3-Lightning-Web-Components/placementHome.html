@@ -1,0 +1,37 @@
+<template>
+
+    <lightning-card title="Placement Portal">
+
+        <div class="slds-p-around_medium">
+
+            <p><b>Student Name :</b> {studentName}</p>
+
+            <p><b>Roll Number :</b> {rollNumber}</p>
+
+            <p><b>Department :</b> {department}</p>
+
+            <br/>
+
+            <lightning-button
+                label="Show Welcome Message"
+                onclick={showMessage}>
+            </lightning-button>
+
+            <br/><br/>
+
+            <p>{message}</p>
+
+            <br/>
+
+            <p><b>Status :</b> {status}</p>
+
+            <lightning-button
+                label="Apply"
+                onclick={applyJob}>
+            </lightning-button>
+
+        </div>
+
+    </lightning-card>
+
+</template>
