@@ -2,9 +2,7 @@
 
 ## Project Overview
 
-This project implements Apex Triggers using the Trigger Handler pattern for a Placement Management System in Salesforce.
-
-The solution validates student job applications before insertion and performs business logic after application status updates.
+This project implements Apex Triggers using the Trigger Handler pattern for a Placement Management System in Salesforce. The solution validates student job applications before insertion and performs business logic after application status updates.
 
 ---
 
@@ -13,7 +11,6 @@ The solution validates student job applications before insertion and performs bu
 Implemented an Apex Trigger with a Trigger Handler class for the **Application__c** object.
 
 The project includes:
-
 - Before Insert Trigger
 - After Update Trigger
 - Trigger Handler Pattern
@@ -122,35 +119,6 @@ Whenever the status changes to one of the following:
 - Offer Accepted
 
 the trigger simulates sending notifications using debug logs.
-
----
-
-# Anonymous Apex Testing
-
-The trigger was tested using Anonymous Apex.
-
-Example:
-
-```apex
-Student__c student = [
-    SELECT Id
-    FROM Student__c
-    LIMIT 1
-];
-
-Job__c job = [
-    SELECT Id
-    FROM Job__c
-    LIMIT 1
-];
-
-Application__c app = new Application__c();
-
-app.Student__c = student.Id;
-app.Job__c = job.Id;
-
-insert app;
-```
 
 ---
 
