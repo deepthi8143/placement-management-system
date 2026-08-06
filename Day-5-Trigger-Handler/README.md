@@ -46,3 +46,7 @@ By completing this sprint, I learned to:
 * SOQL
 * Salesforce Developer Console
 * GitHub
+
+## Test Result
+
+<img width="1534" height="471" alt="Screenshot 2026-08-06 155616" src="https://github.com/user-attachments/assets/e99f7e8c-c748-44bd-88ac-91dfbff760b6" />
