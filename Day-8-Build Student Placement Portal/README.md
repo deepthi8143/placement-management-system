@@ -1,6 +1,6 @@
 # 🎓 Student Placement Portal
 
-> A Salesforce-powered Student Placement Portal built using Lightning Web Components (LWC), Apex, SOQL, and Salesforce Custom Objects.
+A Salesforce-powered Student Placement Portal built using Lightning Web Components (LWC), Apex, SOQL, and Salesforce Custom Objects.
 
 ---
 
