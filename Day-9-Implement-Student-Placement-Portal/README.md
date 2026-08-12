@@ -179,7 +179,3 @@ Middleware can be considered when integrating with multiple external systems.
 ## Test Result
 
 <img width="1160" height="198" alt="Screenshot 2026-08-11 152627" src="https://github.com/user-attachments/assets/033a696f-87c5-4e38-aab8-74f0c6402e52" />
-
----
-
-<img width="1919" height="900" alt="Screenshot 2026-08-11 152805" src="https://github.com/user-attachments/assets/372f3ac2-5350-4d6a-992e-1320e4ac2850" />
