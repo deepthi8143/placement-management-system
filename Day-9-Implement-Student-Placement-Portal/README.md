@@ -1,11 +1,15 @@
-# 🔗 Salesforce External Recruitment Integration
+# 🔗 Day9 - Student Placement Portal
 
 Integration of a Salesforce Student Placement Management System with an external recruitment platform using REST API and Apex.
+
+---
 
 ## 📌 Project Overview
 
 This project extends the **Student Placement Management System** by integrating Salesforce with an external recruitment platform.
 When an application's status becomes **Selected**, Salesforce automatically sends the student's details to the external recruitment system.
+
+---
 
 ## 🚀 Integration Flow
 
@@ -27,6 +31,8 @@ External Recruitment System
  Integration Status
 ```
 
+---
+
 ## 🛠️ Technologies Used
 
 * Salesforce
@@ -39,6 +45,8 @@ External Recruitment System
 * SOQL
 * GitHub
 * VS Code
+
+---
 
 ## 📤 Candidate Information
 
@@ -92,6 +100,8 @@ External API
 ```
 
 Credentials such as passwords, tokens, and secrets are not stored in Apex code.
+
+---
 
 ## ⚡ Why Queueable Apex?
 
@@ -149,6 +159,7 @@ External Recruitment System
 
 Middleware can be considered when integrating with multiple external systems.
 
+---
 
 ## 🎯 Key Concepts Learned
 
@@ -172,4 +183,3 @@ Middleware can be considered when integrating with multiple external systems.
 ---
 
 <img width="1919" height="900" alt="Screenshot 2026-08-11 152805" src="https://github.com/user-attachments/assets/372f3ac2-5350-4d6a-992e-1320e4ac2850" />
-  
